@@ -1,0 +1,97 @@
+body {
+  background-color: #111111;
+  color: #1EFF37; }
+
+#main {
+  height: 50%;
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111111;
+  color: #1EFF37;
+  font-size: 24px;
+  font-family: 'Droid Sans Mono';
+  font-weight: 400; }
+
+#nav {
+  padding-top: 50px;
+  font-family: 'Droid Sans Mono'; }
+  #nav ul {
+    display: inline; }
+    #nav ul li {
+      padding: 30px 20px 20px 20px;
+      text-decoration: none;
+      display: inline; }
+      #nav ul li a {
+        font-size: 16px;
+        color: #1EFF37;
+        text-decoration: none;
+        border: 0px #1EFF37 solid;
+        padding: 5px 10px 5px 10px; }
+        #nav ul li a:hover {
+          border: 1px #1EFF37 dashed; }
+  #nav button {
+    font-size: 15px;
+    border: 1px #1EFF37 solid;
+    padding: 5px 10px 5px 10px;
+    background: transparent;
+    background-color: #111111;
+    margin-top: -5px; }
+    #nav button input textarea {
+      outline: none !important; }
+    #nav button:checked {
+      font-size: 15px;
+      border: 1px #1EFF37 solid;
+      padding: 5px 10px 5px 10px;
+      background: transparent;
+      background-color: #111111; }
+
+#first {
+  color: blue;
+  font-size: 36px; }
+
+#last {
+  color: #888888;
+  font-size: 36px;
+  margin-top: 0px; }
+
+.semi-transparent-button {
+  font-size: 15px;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px 5px 10px;
+  background: rgba(82, 255, 102, 0.1);
+  border: 1px #1EFF37 solid;
+  color: #1EFF37;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out; }
+  .semi-transparent-button:hover {
+    font-size: 15px;
+    border: 1px #1EFF37 solid;
+    padding: 5px 10px 5px 10px;
+    background: transparent;
+    background-color: #111111; }
+
+#SocialMedia {
+  padding: 20px; }
+  #SocialMedia a {
+    text-decoration: none;
+    color: #1EFF37; }
+    #SocialMedia a:hover {
+      border-bottom: 1px #1EFF37 dashed; }
+
+#copyright {
+  font-size: 13px;
+  display: table-row;
+  vertical-align: bottom;
+  height: 5px; }
+
+/*# sourceMappingURL=main.css.map */
