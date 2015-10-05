@@ -22,7 +22,8 @@ var NavMenu = React.createClass({
 		if (this.state.visible==false){
 			return (
 				<div className="col-xs-2 col-xs-offset-10">
-					<button onClick={this.toggle}>☰ Menu</button>
+					<button id="LMenu" onClick={this.toggle}>☰ Menu</button>
+					<button id="sMenu" onClick={this.toggle}>☰</button>
 				</div>
 				);
 		} 
@@ -33,7 +34,8 @@ var NavMenu = React.createClass({
 						<MenuList> </MenuList>
 					</div>
 					<div className="col-xs-2">
-						<button onClick={this.toggle}> X Close</button>
+						<button id="LMenu" onClick={this.toggle}> X Close</button>
+						<button id="sMenu" onClick={this.toggle}>X</button>
 					</div>
 				</div>
 			);

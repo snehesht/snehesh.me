@@ -136,11 +136,13 @@ body {
 	}
 }
 
+@media(max-width:767px){
+#LMenu {display:none;}
+#sMenu {}
+}
 
-#copyright {
-	font-size: 13px;
-	display : table-row;
-    vertical-align : bottom;
-    height : 5px;
+@media(min-width:767px) {
+#LMenu {}
+#sMenu {display:none;}
 }
 

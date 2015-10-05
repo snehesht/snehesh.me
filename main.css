@@ -88,10 +88,11 @@ body {
     #SocialMedia a:hover {
       border-bottom: 1px #1EFF37 dashed; }
 
-#copyright {
-  font-size: 13px;
-  display: table-row;
-  vertical-align: bottom;
-  height: 5px; }
+@media (max-width: 767px) {
+  #LMenu {
+    display: none; } }
+@media (min-width: 767px) {
+  #sMenu {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
