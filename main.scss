@@ -46,27 +46,40 @@ body {
 	padding-top: 50px;
 	// font-family: 'Open Sans', sans-serif;
 	font-family: 'Droid Sans Mono';
-	
-	ul {
-		display: inline;
-		li {
-			padding: 30px 20px 20px 20px;
-			text-decoration: none;
-			display: inline;
 
-			a {
-				font-size: 16px;
-				color:#1EFF37;
-				text-decoration: none;
-				border: 0px #1EFF37 solid;
-				padding: 5px 10px 5px 10px;
+	a {
+		font-size: 16px;
+		color:#1EFF37;
+		text-decoration: none;
+		border: 0px #1EFF37 solid;
+		padding: 5px; //5px 10px 5px 10px;
 
-				&:hover {
-					border: 1px #1EFF37 dashed; 
-				}
-			}
+		&:hover {
+			border: 1px #1EFF37 dashed; 
 		}
 	}
+
+
+	// ul {
+	// 	display: inline;
+	// 	li {
+	// 		padding: 30px 20px 20px 20px;
+	// 		text-decoration: none;
+	// 		display: inline;
+
+	// 		a {
+	// 			font-size: 16px;
+	// 			color:#1EFF37;
+	// 			text-decoration: none;
+	// 			border: 0px #1EFF37 solid;
+	// 			padding: 5px 10px 5px 10px;
+
+	// 			&:hover {
+	// 				border: 1px #1EFF37 dashed; 
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	button {
 		font-size: 15px;
@@ -136,13 +149,16 @@ body {
 	}
 }
 
-@media(max-width:767px){
-#LMenu {display:none;}
-#sMenu {}
-}
 
-@media(min-width:767px) {
-#LMenu {}
-#sMenu {display:none;}
+// Mobile Render
+// Mobile
+@media(max-width:768px){
+#desktop {display:none;}
+#mobile {}
+}
+// Desktop & Tablet
+@media(min-width:768px) {
+#desktop {}
+#mobile {display:none;}
 }
 

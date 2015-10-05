@@ -22,20 +22,14 @@ body {
 #nav {
   padding-top: 50px;
   font-family: 'Droid Sans Mono'; }
-  #nav ul {
-    display: inline; }
-    #nav ul li {
-      padding: 30px 20px 20px 20px;
-      text-decoration: none;
-      display: inline; }
-      #nav ul li a {
-        font-size: 16px;
-        color: #1EFF37;
-        text-decoration: none;
-        border: 0px #1EFF37 solid;
-        padding: 5px 10px 5px 10px; }
-        #nav ul li a:hover {
-          border: 1px #1EFF37 dashed; }
+  #nav a {
+    font-size: 16px;
+    color: #1EFF37;
+    text-decoration: none;
+    border: 0px #1EFF37 solid;
+    padding: 5px; }
+    #nav a:hover {
+      border: 1px #1EFF37 dashed; }
   #nav button {
     font-size: 15px;
     border: 1px #1EFF37 solid;
@@ -88,11 +82,11 @@ body {
     #SocialMedia a:hover {
       border-bottom: 1px #1EFF37 dashed; }
 
-@media (max-width: 767px) {
-  #LMenu {
+@media (max-width: 768px) {
+  #desktop {
     display: none; } }
-@media (min-width: 767px) {
-  #sMenu {
+@media (min-width: 768px) {
+  #mobile {
     display: none; } }
 
 /*# sourceMappingURL=main.css.map */

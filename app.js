@@ -21,21 +21,25 @@ var NavMenu = React.createClass({
 	render: function (){
 		if (this.state.visible==false){
 			return (
-				<div className="col-xs-2 col-xs-offset-10">
-					<button id="LMenu" onClick={this.toggle}>☰ Menu</button>
-					<button id="sMenu" onClick={this.toggle}>☰</button>
+				<div className="col-xs-offset-10 col-xs-2">
+					<button id="desktop" onClick={this.toggle}>☰ Menu</button>
+					<button id="mobile" onClick={this.toggle}>☰</button>
 				</div>
 				);
 		} 
 		else {
 			return (	
-				<div>
-					<div className="col-xs-offset-6 col-xs-4">
+				<div className="row">
+					<div id="desktop" className="col-xs-offset-6 col-xs-4">
 						<MenuList> </MenuList>
 					</div>
+					<div id="mobile" className="col-xs-10">
+						<MenuList> </MenuList>
+					</div>
+
 					<div className="col-xs-2">
-						<button id="LMenu" onClick={this.toggle}> X Close</button>
-						<button id="sMenu" onClick={this.toggle}>X</button>
+						<button id="desktop" onClick={this.toggle}> X Close</button>
+						<button id="mobile" onClick={this.toggle}>X</button>
 					</div>
 				</div>
 			);
@@ -46,20 +50,22 @@ var NavMenu = React.createClass({
 // Menu Items that are to be displayed after clicking " Menu " option.
 var MenuList = React.createClass({
 	render: function(){
-		return(
-				<ul>
-					<li><a href="/">root</a></li>
-					<li><a href="#aboutme">about</a></li>
-					<li><a href="#resume">resume</a></li>
-					<li><a href="#contact">contact</a></li>
-				</ul>
-			);
-		// return (
-		// 	<div className="col-xs-2"><a href="/">root</a></div>
-		// 	<div className="col-xs-2"><a href="#aboutme">about</a></div>
-		// 	<div className="col-xs-2"><a href="#resume">resume</a></div>
-		// 	<div className="col-xs-2"><a href="#contact">contact</a></div>
+		// return(
+		// 		<ul>
+		// 			<li><a href="/">root</a></li>
+		// 			<li><a href="#aboutme">about</a></li>
+		// 			<li><a href="#resume">resume</a></li>
+		// 			<li><a href="#contact">contact</a></li>
+		// 		</ul>
 		// 	);
+		return (
+			<div className="row">
+			<div className="col-xs-3"><a href="/">root</a></div>
+			<div className="col-xs-3"><a href="#aboutme">about</a></div>
+			<div className="col-xs-3"><a href="#resume">resume</a></div>
+			<div className="col-xs-3"><a href="#contact">contact</a></div>
+			</div>
+			);
 	}
 });
 
