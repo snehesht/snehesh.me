@@ -17,12 +17,10 @@ gulp.task('minify-js', function() {
  
 gulp.task('minify-html', function() {
   var opts = {
-    conditionals: true,
-    spare:true
   };
   return gulp.src('./src/*.html')
     .pipe(minifyHTML(opts))
     .pipe(gulp.dest('./build/'));
 });
 
-gulp.task('build',['minify-css','minify-html','minify-js']);
+gulp.task('build',['minify-css','minify-html']);
