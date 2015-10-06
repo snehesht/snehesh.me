@@ -51,14 +51,17 @@ body {
 		font-size: 16px;
 		color:#1EFF37;
 		text-decoration: none;
-		border: 0px #1EFF37 solid;
-		padding: 5px; //5px 10px 5px 10px;
+		// border: 0px #1EFF37 dashed;
+		padding: 5px 10px 8px 10px; //5px 10px 5px 10px;
 
 		&:hover {
 			border: 1px #1EFF37 dashed; 
 		}
 	}
-
+	
+	// .col-xs-2 {
+	// 	padding-right:0px;
+	// }
 
 	// ul {
 	// 	display: inline;
@@ -152,12 +155,12 @@ body {
 
 // Mobile Render
 // Mobile
-@media(max-width:768px){
+@media(max-width:900px){
 #desktop {display:none;}
 #mobile {}
 }
 // Desktop & Tablet
-@media(min-width:768px) {
+@media(min-width:900px) {
 #desktop {}
 #mobile {display:none;}
 }

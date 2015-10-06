@@ -28,15 +28,20 @@ var NavMenu = React.createClass({
 				);
 		} 
 		else {
-			return (	
+			return (
 				<div className="row">
-					<div id="desktop" className="col-xs-offset-6 col-xs-4">
-						<MenuList> </MenuList>
+					<div className="col-xs-10">
+							<div className="row">
+								<div id="desktop" className="col-xs-offset-7 col-xs-5">
+									<MenuList> </MenuList>
+								</div>
+							</div>
+							<div className="row">
+								<div id="mobile" className="col-xs-12">
+									<MenuList> </MenuList>
+								</div>
+							</div>
 					</div>
-					<div id="mobile" className="col-xs-10">
-						<MenuList> </MenuList>
-					</div>
-
 					<div className="col-xs-2">
 						<button id="desktop" onClick={this.toggle}> X Close</button>
 						<button id="mobile" onClick={this.toggle}>X</button>
